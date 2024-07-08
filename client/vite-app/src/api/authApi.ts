@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:3434/api/v1";
+const url = "https://ameboo-be.onrender.com/api/v1";
 axios.defaults.withCredentials = true;
 
 export const signUpUser = async (body: any) => {

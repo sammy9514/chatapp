@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:3434/api/v1/chat";
+const url = "https://ameboo-be.onrender.com/api/v1/chat";
 axios.defaults.withCredentials = true;
 
 export const sendMessageApi = async ({ id, _id, message }: any) => {
