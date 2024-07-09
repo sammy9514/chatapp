@@ -21,7 +21,7 @@ export const Chat = () => {
   const messageEndRef = useRef<HTMLDivElement>(null);
   const chatContainerRef: any = useRef<HTMLDivElement>(null);
 
-  const socket = useRef(io("http://localhost:3434")).current;
+  const socket = useRef(io("https://ameboo-be.onrender.com")).current;
 
   const user = useSelector((state: any) => state?.auth?.user?.data);
   // console.log(user);
