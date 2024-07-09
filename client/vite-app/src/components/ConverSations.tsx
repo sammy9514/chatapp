@@ -44,7 +44,7 @@ export const Conversations = () => {
             <div className="flex justify-between">
               <h1 className="text-[23px] font-bold text-white ">Users</h1>
               <div
-                className="  flex text-white justify-end items-center pr-4 cursor-pointer"
+                className="  flex text-white justify-end items-center pr-4 cursor-pointer text-[26px]"
                 onClick={onLogout}
               >
                 <TbLogout2 />
