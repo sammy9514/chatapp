@@ -12,11 +12,10 @@ export const sendMessageApi = async ({ id, _id, message }: any) => {
         { withCredentials: true }
       )
       .then((res) => {
-        console.log(res);
         return res;
       });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -29,6 +28,6 @@ export const getMessageApi = async ({ id, _id }: any) => {
     // console.log(response);
     return response;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };

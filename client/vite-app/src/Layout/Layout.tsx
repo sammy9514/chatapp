@@ -6,7 +6,7 @@ import { Login } from "../auth/Login";
 
 export const Layout = () => {
   const clicked = useSelector((state: any) => state.user.clicked);
-  console.log(clicked);
+  // console.log(clicked);
 
   return (
     <div>

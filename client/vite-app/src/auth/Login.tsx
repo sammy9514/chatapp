@@ -51,7 +51,7 @@ export const Login = () => {
   return (
     <div>
       <div className="flex justify-center items-center w-full h-screen">
-        <div className="sm:w-[550px] sm:h-[360px] h-[360px] w-[380px] border-[2px] border-black rounded-[10px] py-4 px-6 ">
+        <div className="sm:w-[550px] sm:h-[360px] h-[360px] w-[380px] sm:border-[2px] sm:border-black rounded-[10px] py-4 px-6 ">
           <div className="font-bold text-[25px] mb-7 text-green-500 ">
             Login
           </div>

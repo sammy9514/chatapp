@@ -15,8 +15,14 @@ export const Signup = () => {
 
   const schema = yup.object({
     name: yup.string().required("Name is required"),
-    userName: yup.string().required("Username is required"),
-    password: yup.string().required("Password is required"),
+    userName: yup
+      .string()
+      .min(6, "Username is less than 6 char")
+      .required("Username is required"),
+    password: yup
+      .string()
+      .min(6, "password is less than 6 char")
+      .required("Password is required"),
     gender: yup.string().required(),
   });
 
@@ -50,7 +56,7 @@ export const Signup = () => {
     <div>
       <ToastContainer />
       <div className="flex justify-center items-center w-full h-screen">
-        <div className="sm:w-[550px] sm:h-[460px] h-[470px] w-[380px] border-[2px] border-black rounded-[10px] py-4 px-6 ">
+        <div className="sm:w-[550px] sm:h-[460px] h-[470px] w-[380px] sm:border-[2px] sm:border-black rounded-[10px] py-4 px-6 ">
           <div className="font-bold text-[25px] mb-7 text-green-500 ">
             Signup
           </div>

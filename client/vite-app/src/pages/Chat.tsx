@@ -118,11 +118,11 @@ export const Chat = () => {
                 dispatch(setClicked(false));
               }}
             >
-              <IoArrowBackSharp className="text-[20px] text-white pr-1" />
+              <IoArrowBackSharp className="text-[24px] text-white pr-2 " />
             </div>
           </div>
 
-          <div className="flex-1 w-full flex flex-col items-center overflow-y-auto p-4">
+          <div className="flex-1 w-full h-auto flex flex-col items-center overflow-y-auto p-4">
             <div className="w-full flex flex-col gap-3 mt-3">
               {!messages.length ? (
                 <p className="text-[14px]  text-gray-500 w-full flex justify-center">
@@ -150,7 +150,7 @@ export const Chat = () => {
             </div>
           </div>
 
-          <div className="w-full max-h-[20%] bg-[#202c32] flex p-3">
+          <div className="w-full max-h-[20%] bg-[#202c32] flex p-3 sticky bottom-0">
             <input
               value={message}
               onChange={(e) => setMessage(e.target.value)}

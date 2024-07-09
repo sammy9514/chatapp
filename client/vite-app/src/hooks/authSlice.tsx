@@ -19,7 +19,7 @@ export const login: any = createAsyncThunk(
   async (userData, { rejectWithValue }) => {
     try {
       const response = await loginUser(userData);
-      console.log(response);
+      // console.log(response);
 
       return response;
     } catch (error) {
@@ -34,7 +34,7 @@ export const logout: any = createAsyncThunk(
     try {
       const response = await logoutUser();
 
-      console.log(response);
+      // console.log(response);
       return response;
     } catch (error) {
       return rejectWithValue(error);
