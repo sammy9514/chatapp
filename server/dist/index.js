@@ -15,7 +15,7 @@ dotenv_1.default.config();
 const port = parseInt(process.env.PORT);
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
-    origin: "http://localhost:5173",
+    origin: "https://amebo-fe.vercel.app",
     credentials: true,
 }));
 app.use(express_1.default.json());
@@ -23,7 +23,7 @@ app.use((0, cookie_parser_1.default)());
 const server = (0, http_1.createServer)(app);
 const io = new socket_io_1.Server(server, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://amebo-fe.vercel.app",
         methods: ["GET", "POST"],
     },
 });
