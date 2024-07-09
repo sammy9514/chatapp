@@ -8,8 +8,8 @@ export const generateToken = (userId: any, res: Response) => {
 
   res.cookie("jwToken", token, {
     httpOnly: true,
-    sameSite: "strict",
-    secure: process.env.NODE_ENV === "development",
+    sameSite: "none",
+    secure: process.env.NODE_ENV === "production",
     // secure: process.env.SECURE !== "production",
     maxAge: 1000 * 60 * 60 * 24 * 15,
   });
