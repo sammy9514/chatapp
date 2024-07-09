@@ -125,7 +125,7 @@ export const Chat = () => {
           <div className="flex-1 w-full h-auto flex flex-col items-center overflow-y-auto p-4">
             <div className="w-full flex flex-col gap-3 mt-3">
               {!messages.length ? (
-                <p className="text-[14px]  text-gray-500 w-full flex justify-center">
+                <p className="text-[14px] text-gray-500 w-full flex justify-center">
                   You can now chat with {selected?.userName}
                 </p>
               ) : (
@@ -136,16 +136,22 @@ export const Chat = () => {
                       user?._id === msg?.participant?.[0]
                         ? "self-end max-w-[50%] p-3 bg-green-900 text-white rounded-lg relative message-bubble sent flex gap-1 flex-col"
                         : "self-start max-w-[50%] p-3 bg-[#202c32] text-white rounded-lg relative message-bubble flex gap-1 flex-col"
-                    } text-white`}
+                    }`}
                     ref={chatContainerRef}
+                    style={{
+                      wordWrap: "break-word",
+                      overflowWrap: "break-word",
+                      whiteSpace: "pre-wrap",
+                    }}
                   >
                     {msg?.message}
-                    <div className="text-[11px] text-gray-400  flex self-end ">
+                    <div className="text-[11px] text-gray-400 flex self-end">
                       {formatTime(msg?.updatedAt)}
                     </div>
                   </div>
                 ))
               )}
+
               <div ref={messageEndRef}></div>
             </div>
           </div>

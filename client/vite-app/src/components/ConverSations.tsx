@@ -72,7 +72,7 @@ export const Conversations = () => {
                 className={`w-full h-[70px] flex items-center gap-4 cursor-pointer  transition-all 
                 ${
                   selected && selected?._id === user?._id
-                    ? "bg-slate-600"
+                    ? "sm:bg-slate-600"
                     : "hover:bg-slate-600"
                 } `}
                 key={user?._id}
