@@ -94,7 +94,7 @@ export const Chat = () => {
   };
 
   return (
-    <div className="bg-[#111b21] w-full h-full flex flex-col">
+    <div className="bg-[#111b21] w-full h-screen flex flex-col">
       {!selected ? (
         <div className="flex-1 flex justify-center items-center">
           <h1 className="text-[30px] text-gray-500 ">Select a user to chat</h1>
